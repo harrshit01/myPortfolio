@@ -1,0 +1,29 @@
+@keyframes godown {
+    to{
+        transform:translate(-50%, -10px);
+    }
+    
+}
+
+@keyframes updown {
+    
+    0%{
+        transform: translate(-50%,0px);
+    }  
+    50%{
+        transform: translate(-50%,-10px);
+    } 
+    100% {
+        transform: translate(-50%,0px);
+
+    }  
+}
+@keyframes imgupdown {
+from{
+    transform: translate(50px,-10px);
+}
+to{
+    transform: translate(50px,10px);
+}
+    
+}

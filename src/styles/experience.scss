@@ -1,0 +1,82 @@
+.experience{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    // border-top: 2px solid $color2;
+    &::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        border-left: 1.5px solid $color2;
+        // color: $color2;
+        z-index: 2;
+        transform: translateX(-50%);
+    }
+    .timeline{
+        width:70%;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .timelineitem{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 40%;
+            height:70px;
+            // border: 2px solid $color2;
+            background-color: $color4;
+            h3{
+                color: $bgcolor;
+            }
+            p{
+                color: $bgcolor;
+                font-weight: 300;
+                
+            }
+        }
+        .timelineleft{
+            align-self: flex-start;
+            align-items: end;
+            padding-right: 2rem;
+            &::after{
+                content: "";
+                position: absolute;
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                border: 1px solid $color2;
+                left:50%;
+                transform: translateX(-50%);
+                z-index: 3;
+                background-color: $bgcolor;
+                // animation: updown 0.5s infinite ease-in alternate;
+            }
+        }
+        .timelineright{
+            align-self: flex-end;
+            padding-left: 2rem;
+            &::after{
+                content: "";
+                position: absolute;
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                border: 1px solid $color2;
+                left:50%;
+                transform: translateX(-50%);
+                z-index: 3;
+                background-color: $bgcolor;
+                // animation: updown 0.7s infinite ease-in alternate;
+
+
+            }
+
+        }
+    }
+}

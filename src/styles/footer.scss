@@ -1,0 +1,91 @@
+footer{
+    min-height: 40vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.477);
+    // background-color: $bgcolor2;
+    gap:3rem;
+    >div{
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        .getintouch{
+            width:60%;
+            h3{
+                color:$color4;
+                font-weight: 500;
+                margin-bottom: 10px;
+            }
+            input{
+                width: 60%;
+                background-color: $bgcolor2;
+                border: none;
+                border-bottom: 1px solid $color2;
+                color:$color5;
+                padding: 10px;
+                font-size: 1rem;
+                letter-spacing: 1px;
+                &:focus{
+                    outline: none;
+                }
+            }
+            button{
+                border: none;
+                background-color: $color2;
+                color:$bgcolor;
+                height:40px ;
+                width: 50px;
+                line-height: 40px; 
+                margin-left: 10px;
+                border-radius: 2px;
+                svg{
+                    font-size: 1.5rem;
+                    transform: translateY(6px);
+                }
+            }
+
+        }
+        .letschat{
+            width:20%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            h3{
+                color:$color4;
+                font-weight: 500;
+                margin-bottom: 10px;
+               
+                
+            }
+            a{
+                font-size: 1.7rem;
+                color:$color4;
+                margin: 5px;
+                &:hover{
+                    color: $color2;
+                }
+            }
+
+
+        }
+    }
+    aside{
+        border-top: 1px solid rgba(255, 255, 255, 0.196);
+        padding-top: 1rem;
+        width: 90%;
+        display: flex;
+        p{
+            flex-grow: 1;
+            color: $color4;
+            word-spacing: 4px;
+        }
+        a{
+            color: $color2;
+            margin: 0 15px;
+        }
+    }
+}

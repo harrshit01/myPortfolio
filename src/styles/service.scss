@@ -1,0 +1,93 @@
+#services{
+    width:100%;
+    height:100vh;
+    padding: 2rem 10rem ;
+    
+    background-color: $bgcolor;
+    h2{
+        display: inline-block;
+        margin: 2rem ;
+        color:$color2;
+        padding: 5px;
+        border-bottom: 2px solid $color2;
+    }
+    section{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px;
+        >*{
+            // background-color: $color2;
+            border: 1.5px solid$color2;
+            height:150px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 0.7rem;
+        }
+        .serviceBox1{
+            grid-column: 1/2;
+            grid-row: 1/3;
+            height: 320px;
+            
+            h3{
+                // color: $bgcolor;
+                color:$color5;
+                font-size: 25px;
+                
+                // font-weight: 500;
+            }
+            p{
+                // color: $bgcolor;
+                color:$color5;
+                font-size: 1rem;
+                font-weight: 500;
+                letter-spacing: 1px;
+
+            }
+        }
+        .serviceBox2{
+            svg{
+                // color: $bgcolor;
+                color:$color5;
+                font-size: 25px;
+
+            }
+            span{
+                // color: $bgcolor;
+                font-weight: 500;
+                letter-spacing: 1px;
+                color: $color5;
+            }
+        }
+        .serviceBox3{
+            svg{
+                // color: $bgcolor;
+                color:$color5;
+                font-size: 25px;
+
+            }
+            span{
+                // color: $bgcolor;
+                letter-spacing: 1px;
+                font-weight: 500;
+                color: $color5;
+            }
+        }
+        .serviceBox4{
+            grid-column: 2/4;
+            svg{
+                // color: $bgcolor;
+                color:$color5;
+                font-size: 30px;
+            }
+            span{
+                font-weight: 500;
+                letter-spacing: 1px;
+                // color: $bgcolor;
+                color:$color5;
+
+            }
+        }
+    }
+}
